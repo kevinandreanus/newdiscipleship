@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AssessmentController;
+use App\Http\Controllers\BibleController;
 use App\Http\Controllers\EventNotesController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
@@ -67,6 +68,9 @@ Route::post('/question/store', [AssessmentController::class, 'question_store'])-
 Route::get('/question/delete/{id}', [AssessmentController::class, 'question_delete'])->middleware(['auth', 'verified'])->name('question-delete');
 Route::get('/question/edit/{id}', [AssessmentController::class, 'question_edit'])->middleware(['auth', 'verified'])->name('question-edit');
 Route::post('/question/update', [AssessmentController::class, 'question_update'])->middleware(['auth', 'verified'])->name('question-update');
+
+Route::get('/bible', [BibleController::class, 'index']);
+Route::get('/bible/getTotalVerse/{passage}/{chapter}', [BibleController::class, 'getTotalVerse']);
 
 Route::get('/test', function(){
         $user = User::find(Auth::id());

@@ -1,0 +1,30 @@
+[13-Nov-2021 11:02:40 Asia/Jakarta] PHP Warning:  require(/home/disr1214/public_html/admin/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/disr1214/public_html/admin/index.php on line 34
+[13-Nov-2021 11:02:40 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required '/home/disr1214/public_html/admin/../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/disr1214/public_html/admin/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/disr1214/public_html/admin/index.php on line 34
+[13-Nov-2021 11:03:35 Asia/Jakarta] PHP Warning:  require(/home/disr1214/public_html/admin/../../../admindiscipleship/vendor/autoload.php): Failed to open stream: No such file or directory in /home/disr1214/public_html/admin/index.php on line 34
+[13-Nov-2021 11:03:35 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required '/home/disr1214/public_html/admin/../../../admindiscipleship/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/disr1214/public_html/admin/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/disr1214/public_html/admin/index.php on line 34
+[13-Nov-2021 11:03:36 Asia/Jakarta] PHP Warning:  require(/home/disr1214/public_html/admin/../../../admindiscipleship/vendor/autoload.php): Failed to open stream: No such file or directory in /home/disr1214/public_html/admin/index.php on line 34
+[13-Nov-2021 11:03:36 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required '/home/disr1214/public_html/admin/../../../admindiscipleship/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/disr1214/public_html/admin/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/disr1214/public_html/admin/index.php on line 34
+[13-Nov-2021 11:03:36 Asia/Jakarta] PHP Warning:  require(/home/disr1214/public_html/admin/../../../admindiscipleship/vendor/autoload.php): Failed to open stream: No such file or directory in /home/disr1214/public_html/admin/index.php on line 34
+[13-Nov-2021 11:03:36 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required '/home/disr1214/public_html/admin/../../../admindiscipleship/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/disr1214/public_html/admin/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/disr1214/public_html/admin/index.php on line 34
+[13-Nov-2021 11:03:37 Asia/Jakarta] PHP Warning:  require(/home/disr1214/public_html/admin/../../../admindiscipleship/vendor/autoload.php): Failed to open stream: No such file or directory in /home/disr1214/public_html/admin/index.php on line 34
+[13-Nov-2021 11:03:37 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required '/home/disr1214/public_html/admin/../../../admindiscipleship/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/disr1214/public_html/admin/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/disr1214/public_html/admin/index.php on line 34
+[13-Nov-2021 11:03:37 Asia/Jakarta] PHP Warning:  require(/home/disr1214/public_html/admin/../../../admindiscipleship/vendor/autoload.php): Failed to open stream: No such file or directory in /home/disr1214/public_html/admin/index.php on line 34
+[13-Nov-2021 11:03:37 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required '/home/disr1214/public_html/admin/../../../admindiscipleship/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/disr1214/public_html/admin/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/disr1214/public_html/admin/index.php on line 34

@@ -14,7 +14,8 @@
                 </div>
             </div>
         @endif
-
+        <a href="#" id="trigger_verse">go</a>
+        <a href="#verse_22" id="s">go</a>
     </div>
 @endsection
 
@@ -24,13 +25,12 @@
         var passage = '';
         var chapter = '';
         var chapter_content = ``;
+        var read_content = ``;
 
         $('body').on('click', '.passage_choose', function(e) {
             e.preventDefault();
             passage = $(this).data('passage');
             var totalChapter = $(this).data('total_chapter');
-
-            console.log(totalChapter);
 
             let content = ``;
             $('#header_title').text('Pilih Pasal');
@@ -66,7 +66,8 @@
                 },
                 success: function(result) {
                     $('#breadcrumb').append(`<a href="" id="bc_chapter"> > ` + chapter + `</a>`);
-                    var totalVerse = result;
+                    var totalVerse = result.totalVerse;
+                    read_content = result.data;
                     $('#header_title').text('Pilih Ayat');
                     var content = ``;
                     for (let i = 1; i <= totalVerse; i++) {
@@ -77,6 +78,22 @@
                     $.LoadingOverlay("hide");
                 }
             });
+        });
+
+        $('body').on('click', '.verse_choose', function(e) {
+            e.preventDefault();
+            verse = $(this).data('verse');
+
+            let array = read_content.verses;
+
+            $('.card-body').html(``);
+
+            array.forEach(element => $('.card-body').append(`<small id="verse_` + element.verse + `">` + element
+                .verse +
+                `</small><p>` + element
+                .content + `</p>`));
+
+            $("#trigger_verse").attr("href", "#verse_" + verse);
         });
     </script>
 @endpush

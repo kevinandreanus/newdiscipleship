@@ -25,6 +25,15 @@ class BibleController extends Controller
 
         $totalVerse = count(json_decode($data)->verses);
 
-        return $totalVerse;
+        return ['totalVerse' => $totalVerse, 'data' => json_decode($data)];
+    }
+
+    public function getContent($passage, $chapter)
+    {
+        $passage = str_replace(' ', '', $passage);
+        $response = Http::get('https://api-alkitab.herokuapp.com/v2/passage/'.$passage.'/'.$chapter);
+        $data = $response->body();
+
+        return $data;
     }
 }

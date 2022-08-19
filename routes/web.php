@@ -71,6 +71,7 @@ Route::post('/question/update', [AssessmentController::class, 'question_update']
 
 Route::get('/bible', [BibleController::class, 'index']);
 Route::get('/bible/getTotalVerse/{passage}/{chapter}', [BibleController::class, 'getTotalVerse']);
+Route::get('/bible/getContent/{passage}/{chapter}', [BibleController::class, 'getContent']);
 
 Route::get('/test', function(){
         $user = User::find(Auth::id());
